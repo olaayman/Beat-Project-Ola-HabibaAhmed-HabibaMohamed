@@ -1,0 +1,104 @@
+*{
+    background-color: #FFC0CB;
+    align-items: normal;
+    font-family: sans-serif;
+    margin:10px 10px 10px 10px;
+    width: content-box;
+}
+h2{
+    font-size: 55px;
+    font-family: sans-serif;
+    height: 90px;
+    font-weight: bolder;
+    color: darkmagenta;
+}
+h3{
+    font-size: 25px;
+    color: white;
+}
+h4{
+    font-size: 30px;}
+.sponsors {
+    background-color: #FFC0CB;
+    color: white;
+    display: inline-block;
+    align-items:center;
+    position: relative;
+    padding-bottom: 50px;}
+.sponsors-top {
+    width: fit-content;
+    padding: 5px 5px;
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 auto;}
+.sponsors-top-left {
+    width: auto;
+}
+.sponsors-top-right {
+    width: auto;
+    display: inline-block;
+    flex-direction: column;
+}
+button {
+    border: none;
+    color: darkmagenta;
+    display:inline-block;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;}
+button a {
+    text-decoration: none;
+    background: darkmagenta;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.add-button, .delete-button{
+    background-color:darkmagenta;
+    border-radius: 6px;
+    font-size: 20px;
+}
+.sponsors-list {
+    display: inline-block;
+    flex-direction: column;
+    padding: 5px;
+    margin:0 0 0 0;}
+.sponsors-list ul {
+    display: flex;
+    }
+.sponsors-list ul li {
+    width:auto;
+    display: flex;
+    position: center;
+}
+.sponsors-list ul li a img {
+    border: white;
+    width: fit-content;
+    height: 130px;
+    display:flex;
+    border-radius: 30px;
+    margin: 0 0 0 0;
+}
+footer{
+    display: flex;
+    background-color: #FFC0CB;
+}
+.beat{
+    width: auto;
+    height:130px;
+}
+.footer-bottom,.contact{
+    background-color: #FFC0CB;
+}
+.footer-bottom .contact div ,.contact-us ,.beat-logo{
+    background-color: #FFC0CB;
+    display: inline-block;
+}
+.footer-bottom .contact a{
+    background-color: #FFC0CB;
+    color: red;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+}

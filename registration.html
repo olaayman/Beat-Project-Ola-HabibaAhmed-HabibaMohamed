@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html>
-
+  <meta charset="windows-1252">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
+  
     <script src="registration.js"></script>
     <link href="styles.css" rel="stylesheet">
-
   <title>Event Registration Form.</title>
+  <link rel="shortcut icon" href="11.jpeg">
   
   <div id="event-registration">
-    <h1>iFiveK Registration</h1>
-    <form id="event-registration-form" method="POST" action="">
+    <h1>Beat's Event Registration</h1>
+    <form >
       <!-- Form contents will go here -->
       <fieldset>
         <h3>Personal Information</h3>
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" name="first-name" />
-        <label for="last-name">Last Name</label>
-        <input type="text" id="last-name" name="last-name" />
+        <label for="first-name">Name</label>
+        <input type="text" id="user_input" name="first-name" />
         <label for="email">Email</label>
         <input type="email" id="email" name="email" />
-        <label for="street">Street Address</label>
-        <input type="text" id="street" name="street" />
-        <label for="unit">Unit</label>
-        <input type="text" id="unit" name="unit" />
-        <label for="city">City</label>
-        <input type="text" id="city" name="city" />
-        <label for="state">State</label>
-        <select id="states">
-            <option>-- Choose your state --</option>
+        <label for="Phone">Phone number</label>
+        <input type="number" id="Phone" name="Phone" />
+        <label for="university">university</label>
+        <select id="university">
+          <option value="AF">Cairo University</option>
+          <option value="AL">Ain Shams University</option>
+          <option value="DZ">Alexandria University</option>
+          <option value="AS">Helwan University</option>
+          <option value="AD">Mansoura University</option>
           </select>
-        <label for="postal-code">Postal Code</label>
-        <input type="text" id="postal-code" name="postal-code" />
+        <label for="collage">collage</label>
+        <select id="collage">
+          <option value="AL">Enginnering</option>
+          <option value="DZ">Medicine</option>
+          <option value="AS">science</option>
+          <option value="AD">computer science</option>          </select>
+          <label for="year">studying year</label>
+          <select id="year">
+            <option value="AF">Freshman</option>
+            <option value="AL">sophomore</option>
+            <option value="DZ">junior</option>
+            <option value="AS">senior 1</option>
+            <option value="AD">senior 2</option>            </select>
+  
       </fieldset>
       <fieldset>
         <h3>Additional Information</h3>
@@ -42,12 +54,28 @@
           <input type="radio" name="size" value="large">L
           <input type="radio" name="size" value="xlarge">XL
           <br/>
-          <input type="checkbox" name="pickup"> I will be picking up my shirt on race day.
+          <input type="checkbox" name="pickup"> I will be picking up my shirt on the Event day.
 
         </div>
       </fieldset>
-      <button type="button">Submit Form</button>
+    </form>
+    <button type="submit" onclick="showInput();"  >Submit Form</button>
   </div>
+
+  <form >
+    <fieldset>
+      <h3>Students Names</h3>
+            <span id='display'></span>
+          
+    </fieldset>
+  </form>
+  <form >
+    <fieldset>
+      <h3>Number of registrations</h3>
+            <span id='numOfReg'></span>
+          
+    </fieldset>
+  </form>
 </head>
 
 <body>
